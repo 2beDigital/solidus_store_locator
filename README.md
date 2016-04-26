@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nebulab/solidus_store_locator.svg?branch=master)](https://travis-ci.org/nebulab/solidus_store_locator)
+
 Solidus Store Locator
 =====================
 
