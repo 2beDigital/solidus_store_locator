@@ -21,7 +21,7 @@ module SolidusStoreLocator
       end
 
       def add_migrations
-        run 'bundle exec rake railties:install:migrations FROM=spree_store_locator'
+        run 'bundle exec rake railties:install:migrations FROM=solidus_store_locator'
       end
 
       def run_migrations
