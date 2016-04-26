@@ -1,23 +1,25 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_store_locator'
-  s.version     = '3.0.0'
-  s.summary     = 'A Store Locator for your Spree Store'
+  s.name        = 'solidus_store_locator'
+  s.version     = '1.2.0'
+  s.summary     = 'A Store Locator for your Solidus Store'
   s.description = 'Show your customer where do you sell easily'
   s.required_ruby_version = '>= 2.0.0'
 
-   s.author    = 'Matteo Alessani'
-   s.email     = 'alessani@gmail.com'
-   
+  s.author    = 'Matteo Alessani'
+  s.email     = 'alessani@gmail.com'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.0.0'
+  s.add_dependency 'solidus_core', '~> 1.2.0'
+  s.add_dependency 'solidus_backend', '~> 1.2.0'
+  s.add_dependency 'solidus_frontend', '~> 1.2.0'
   s.add_dependency 'geocoder', '1.2.6'
+  s.add_dependency 'jbuilder', '~> 2.3'
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'coffee-rails'

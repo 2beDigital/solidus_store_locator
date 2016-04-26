@@ -1,8 +1,8 @@
-module SpreeStoreLocator
+module SolidusStoreLocator
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_store_locator'
+    engine_name 'solidus_store_locator'
 
     config.autoload_paths += %W(#{config.root}/lib)
 

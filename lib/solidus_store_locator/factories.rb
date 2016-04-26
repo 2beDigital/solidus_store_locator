@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :spree_store_locator, class: Spree::StoreLocator do
+  factory :store_locator, class: Spree::StoreLocator do
     address1 '865 Market St'
     address2 ''
     city     'San Francisco'
@@ -12,4 +12,3 @@ FactoryGirl.define do
   end
 
 end
-

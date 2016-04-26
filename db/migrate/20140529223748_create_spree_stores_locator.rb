@@ -13,7 +13,7 @@ class CreateSpreeStoresLocator < ActiveRecord::Migration
       t.string :website
       t.string :zip,       null: false, default: ''
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

@@ -11,17 +11,17 @@ It uses [jQuery Store Locator Plugin](https://github.com/bjorn2404/jQuery-Store-
 Installation
 ------------
 
-Add spree_store_locator to your Gemfile:
+Add solidus_store_locator to your Gemfile:
 
 ```ruby
-gem 'spree_store_locator',  github: 'NoelDiazMesa/spree_store_locator' , branch: 'master'
+gem 'solidus_store_locator',  github: 'nebulab/solidus_store_locator'
 ```
 
 Bundle your dependencies and run the installation generator:
 
 ```shell
 bundle
-bundle exec rails g spree_store_locator:install
+bundle exec rails g solidus_store_locator:install
 ```
 
 Customization
@@ -71,7 +71,7 @@ When testing your applications integration with this extension you may use it's 
 Simply add this require statement to your spec_helper:
 
 ```ruby
-require 'spree_store_locator/factories'
+require 'solidus_store_locator/factories'
 ```
 
 Contributing
@@ -79,6 +79,3 @@ Contributing
 
 Pull Requests are more than welcome!. If needed, make sure you add
 tests :)
-
-
-

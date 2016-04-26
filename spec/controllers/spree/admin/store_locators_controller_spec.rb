@@ -4,7 +4,7 @@ describe Spree::Admin::StoreLocatorsController do
   render_views
   stub_authorization!
 
-  let(:subject) { FactoryGirl.create :spree_store_locator }
+  let(:subject) { FactoryGirl.create :store_locator }
   let(:user) { create(:user) }
 
   before(:each) do
@@ -58,7 +58,7 @@ describe Spree::Admin::StoreLocatorsController do
 
   describe '#destroy' do
     before :each do
-      @store = FactoryGirl.create :spree_store_locator
+      @store = FactoryGirl.create :store_locator
     end
 
     it 'destroys the store' do
@@ -73,4 +73,3 @@ describe Spree::Admin::StoreLocatorsController do
   end
 
 end
-

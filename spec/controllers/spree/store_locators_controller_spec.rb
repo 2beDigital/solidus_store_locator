@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Spree::StoreLocatorsController do
   render_views
 
-  let(:subject) { FactoryGirl.create :spree_store_locator }
+  let(:subject) { FactoryGirl.create :store_locator }
 
   describe '#index' do
     context 'when is called using a normal GET request' do
@@ -21,4 +21,3 @@ describe Spree::StoreLocatorsController do
     end
   end
 end
-
