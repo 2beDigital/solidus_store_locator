@@ -1,5 +1,5 @@
-Spree Store Locator
-===================
+Solidus Store Locator
+=====================
 
 Do you have physical stores? This extension is for you! Tell your
 customers where they can get your products.
