@@ -16,7 +16,7 @@ Installation
 Add solidus_store_locator to your Gemfile:
 
 ```ruby
-gem 'solidus_store_locator',  github: 'nebulab/solidus_store_locator'
+gem 'solidus_store_locator',  git: 'https://github.com/2beDigital/solidus_store_locator', branch: 'master'
 ```
 
 Bundle your dependencies and run the installation generator:
