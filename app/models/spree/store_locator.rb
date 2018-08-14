@@ -4,7 +4,12 @@ class Spree::StoreLocator < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
 
-  has_attached_file :image, styles: { large: "500x500>", medium: "200x200>", thumb: "100x100>" }
+  has_attached_file :image, styles: { large: "500x500>", medium: "200x200>", thumb: "100x100>" },
+                            default_style: :medium,
+                            url: '/store_locator/:id/:style/:basename.:extension',
+                            path: '/store_locator/:id/:style/:basename.:extension'
+
+  validates_attachment :image, content_type: { content_type: %w(image/jpeg image/jpg image/png image/gif) }
 
   validates :address1, :city, :country, :state, presence: true
 

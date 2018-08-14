@@ -1,7 +1,6 @@
 module Spree
   class Admin::StoreLocatorsController < Admin::ResourceController
     def index
-      load_store_locators
       @store_locator = Spree::StoreLocator.new
     end
 
@@ -36,11 +35,6 @@ module Spree
     end
 
     private
-
-    def load_store_locators
-      per_page = params[:per_page] || 20
-      @store_locators = Spree::StoreLocator.state_ordered.page(params[:page]).per(per_page)
-    end
 
     def find_resource
       @store_locator = Spree::StoreLocator.friendly.find params[:id]

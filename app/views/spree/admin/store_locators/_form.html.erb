@@ -9,7 +9,7 @@
   <div class="col-md-8">
     <%= f.field_container :address1, class: ['form-group'] do %>
       <%= f.label :address1 %>
-      <%= f.text_field :address1, class: 'form-control title' %>
+      <%= f.text_field :address1, class: 'form-control title', required: true %>
       <%= f.error_message_on :address1 %>
     <% end %>
   </div>
@@ -23,7 +23,7 @@
   <div class="col-md-8">
     <%= f.field_container :city, class: ['form-group'] do %>
       <%= f.label :city %>
-      <%= f.text_field :city, class: 'form-control title' %>
+      <%= f.text_field :city, class: 'form-control title', required: true %>
       <%= f.error_message_on :city %>
     <% end %>
   </div>
@@ -32,21 +32,21 @@
   <div class="col-md-3">
     <%= f.field_container :state, class: ['form-group'] do %>
       <%= f.label :state %>
-      <%= f.text_field :state, class: 'form-control title' %>
+      <%= f.text_field :state, class: 'form-control title', required: true %>
       <%= f.error_message_on :state %>
     <% end %>
   </div>
   <div class="col-md-3">
     <%= f.field_container :country, class: ['form-group'] do %>
       <%= f.label :country %>
-      <%= f.text_field :country, class: 'form-control title' %>
+      <%= f.text_field :country, class: 'form-control title', required: true %>
       <%= f.error_message_on :country %>
     <% end %>
   </div>
   <div class="col-md-2">
     <%= f.field_container :zip, class: ['form-group'] do %>
       <%= f.label :zip %>
-      <%= f.text_field :zip, class: 'form-control title' %>
+      <%= f.text_field :zip, class: 'form-control title', required: true %>
       <%= f.error_message_on :zip %>
     <% end %>
   </div>

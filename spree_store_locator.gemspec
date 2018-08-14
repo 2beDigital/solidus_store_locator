@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'solidus_core', '~> 1.2.0'
-  s.add_dependency 'solidus_backend', '~> 1.2.0'
-  s.add_dependency 'solidus_frontend', '~> 1.2.0'
+  s.add_dependency 'solidus_core', '~> 2.1.0'
+  s.add_dependency 'solidus_backend', '~>2.1.0'
+  s.add_dependency 'solidus_frontend', '~> 2.1.0'
   s.add_dependency 'geocoder', '1.2.6'
   s.add_dependency 'jbuilder', '~> 2.3'
 

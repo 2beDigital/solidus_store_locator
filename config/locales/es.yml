@@ -32,7 +32,11 @@ es:
     our_stores: Nuestras Tiendas
     prev: "&lsaquo;"
     store_locator:
-      title: Tiendas Fisicas
-      menu: Tiendas Fisicas
+      title: Tiendas Físicas
+      menu: Tiendas Físicas
       new: Nueva Tienda
       deleted: Tienda borrada exitosamente
+    admin:
+      tab:
+        store_locator:
+          menu: Tiendas físicas
