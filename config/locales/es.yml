@@ -16,6 +16,7 @@ es:
         state: Provincia o Estado
         zipcode: Código Postal
         website: Página web
+        position: Posición
   spree:
     actions:
       submit: Enviar

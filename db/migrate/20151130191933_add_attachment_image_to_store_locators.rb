@@ -1,4 +1,4 @@
-class AddAttachmentImageToStoreLocators < ActiveRecord::Migration
+class AddAttachmentImageToStoreLocators < SolidusSupport::Migration[4.2]
   def self.up
     change_table :spree_store_locators do |t|
       t.attachment :image

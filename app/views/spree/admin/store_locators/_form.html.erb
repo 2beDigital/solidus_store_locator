@@ -1,26 +1,26 @@
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-12">
     <%= f.field_container :name, class: ['form-group'] do %>
       <%= f.label :name %>
       <%= f.text_field :name, class: 'form-control title' %>
       <%= f.error_message_on :name %>
     <% end %>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-12">
     <%= f.field_container :address1, class: ['form-group'] do %>
       <%= f.label :address1 %>
       <%= f.text_field :address1, class: 'form-control title', required: true %>
       <%= f.error_message_on :address1 %>
     <% end %>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-12">
     <%= f.field_container :address2, class: ['form-group'] do %>
       <%= f.label :address2 %>
       <%= f.text_field :address2, class: 'form-control title' %>
       <%= f.error_message_on :address2 %>
     <% end %>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-12">
     <%= f.field_container :city, class: ['form-group'] do %>
       <%= f.label :city %>
       <%= f.text_field :city, class: 'form-control title', required: true %>
@@ -43,30 +43,37 @@
       <%= f.error_message_on :country %>
     <% end %>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-3">
     <%= f.field_container :zip, class: ['form-group'] do %>
       <%= f.label :zip %>
       <%= f.text_field :zip, class: 'form-control title', required: true %>
       <%= f.error_message_on :zip %>
     <% end %>
   </div>
+   <div class="col-md-3">
+    <%= f.field_container :position, class: ['form-group'] do %>
+      <%= f.label :position %>
+      <%= f.number_field :position, :min => 0, class: 'form-control title' %>
+      <%= f.error_message_on :position %>
+    <% end %>
+  </div>
 </div>
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-6">
     <%= f.field_container :website, class: ['form-group'] do %>
       <%= f.label :website %>
       <%= f.text_field :website, class: 'form-control title' %>
       <%= f.error_message_on :website %>
     <% end %>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-6">
     <%= f.field_container :phone, class: ['form-group'] do %>
       <%= f.label :phone %>
       <%= f.text_field :phone, class: 'form-control title' %>
       <%= f.error_message_on :phone %>
     <% end %>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-12">
     <%= f.field_container :image, class: ['form-group'] do %>
       <%= f.label :image %>
       <%= f.file_field :image, class: 'form-control title' %>

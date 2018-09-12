@@ -51,7 +51,8 @@ module Spree
           :phone,
           :state,
           :website,
-          :zip
+          :zip,
+          :position
       )
     end
   end

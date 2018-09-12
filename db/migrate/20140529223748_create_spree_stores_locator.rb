@@ -1,4 +1,4 @@
-class CreateSpreeStoresLocator < ActiveRecord::Migration
+class CreateSpreeStoresLocator < SolidusSupport::Migration[4.2]
   def change
     create_table :spree_store_locators do |t|
       t.string :address1,  null: false, default: ''
