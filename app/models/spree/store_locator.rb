@@ -12,6 +12,7 @@ class Spree::StoreLocator < ActiveRecord::Base
   validates_attachment :image, content_type: { content_type: %w(image/jpeg image/jpg image/png image/gif) }
 
   validates :address1, :city, :country, :state, presence: true
+  default_scope -> { order("position ASC") }
   scope :position_ordered, -> { order("position ASC") }
   scope :state_ordered, -> { order('state ASC') }
 
