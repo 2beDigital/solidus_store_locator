@@ -1,7 +1,7 @@
 module Spree
   class StoreLocatorsController < Spree::StoreController
     def index
-      @store_locators = Spree::StoreLocator.all.default_scope
+      @store_locators = Spree::StoreLocator.all.position_ordered
     end
 
     def show
