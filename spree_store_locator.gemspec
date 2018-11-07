@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'solidus_store_locator'
-  s.version     = '1.2.1'
+  s.version     = '1.2.2'
   s.summary     = 'A Store Locator for your Solidus Store'
   s.description = 'Show your customer where do you sell easily'
   s.required_ruby_version = '>= 2.0.0'

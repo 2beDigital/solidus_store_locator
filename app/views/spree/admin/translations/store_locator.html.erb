@@ -1,11 +1,13 @@
-<%= render 'spree/admin/shared/store_locator_tabs', current: 'Translations' %>
+<%#= render 'spree/admin/shared/store_locator_tabs', current: 'Translations' %>
+<%= render :partial => 'spree/admin/shared/configuration_menu' %>
+<%= render :partial => 'spree/shared/error_messages', locals: { target: @store_locator} %>
 
 <% content_for :page_title do %>
   <%= Spree.t(:"store_locator.menu") %>
 <% end %>
 
 <% content_for :page_actions do %>
-  <%= button_link_to Spree.t(:back_to_resource_list, resource: Spree::Product.model_name.human), admin_products_path, class: 'btn btn-default', icon: 'arrow-left' %>
+  <%= button_link_to Spree.t(:back_to_store_locator_list), spree.admin_store_locators_path, class: 'btn btn-default', icon: 'arrow-left' %>
 <% end %>
 
 <%= render 'form' %>

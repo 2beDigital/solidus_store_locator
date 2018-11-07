@@ -52,7 +52,8 @@ module Spree
           :state,
           :website,
           :zip,
-          :position
+          :position,
+          translations_attributes: [:id, :locale, :address1, :address2, :city, :country, :state, :name]
       )
     end
   end

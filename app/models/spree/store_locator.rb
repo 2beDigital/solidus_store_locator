@@ -20,6 +20,11 @@ class Spree::StoreLocator < ActiveRecord::Base
 
   after_validation :geocode, :if => :has_location?, :unless => :has_coordinates?
 
+  translates :address1, :address2, :city, :country, :state, :name, :fallbacks_for_empty_translations => true
+  # Classpath bug; undefined method `whitelisted_ransackable_associations'
+  include Spree::RansackableAttributes
+  include SolidusGlobalize::Translatable
+
   def initialize(*args)
     super(*args)
 
